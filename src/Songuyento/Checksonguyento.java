@@ -1,3 +1,5 @@
+package Songuyento;
+
 import java.util.Scanner;
 
 public class Checksonguyento {
@@ -5,6 +7,9 @@ public class Checksonguyento {
         Scanner sc=new Scanner(System.in);
         System.out.print("Pls input your number");
         int number=sc.nextInt();
+        display(number);
+    }
+    static void display(int number){
         if (checkPrimeNumber(number)){
             System.out.println("Is not a prime");
         }
